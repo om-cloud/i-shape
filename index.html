@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <title>proj canvas</title>
+</head>
+
+<body onload="init()">
+     <div class="topnav" id="myTopnav">
+        <a href="#home" class="active">i-Shape</a>
+       
+        <div class="dropdown">
+          <button class="dropbtn">Shape
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a onclick="setShape('rect')">Rectangle</a>
+            <a onclick="setShape('circle')">Circle</a>
+            <a onclick="setShape('line')">Line</a>
+            <a onclick="setShape('triangle')">Triangle</a>
+            <a onclick="setShape('text')">Text</a>
+          </div>
+        </div>
+        <input class="shape-color" type="color" id="favcolor" name="favcolor" value="#ff0000">
+        <a onclick="setOutlineColor()">Save Outline Color</a>
+        <a onclick="setFillColor()">Save Fill Color</a>
+        <input class="word-input" placeholder="Example" type="text">
+        <a onclick="setText()">Save Text</a>
+        <a class="drag-draw" onclick="startDragDraw()">Drag Shapes</a>
+        <a onclick="clearCanvas()"   >Clear</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+        <a class="download" href="#" onclick="downloadCanvas(this)" download="">Download</a>
+      </div> 
+    <div class="canvas-container">
+        <canvas id="myCanvas" height="500" width="500" 
+        onclick="draw(event)"
+        onmousedown="draw(event)"
+        onmouseup="draw(event)"
+        onmousemove="draw(event)"
+        ></canvas>
+    </div>
+
+
+    <img src="img/dog.jpg" alt="" hidden>
+  
+
+<!-- 
+
+    <button onclick="setShape('triangle')">Triangle</button>
+    <button onclick="setShape('rect')">Rect</button>
+    <button onclick="setShape('text')">Text</button>
+    <button onclick="setShape('line')">Line</button>
+    <button onclick="clearCanvas()">Clear</button> -->
+    
+  
+
+    
+    <script src="js/main.js"></script>
+</body>
+
+</html>
