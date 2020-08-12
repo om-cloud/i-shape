@@ -15,11 +15,10 @@ canvas {
     margin: 0 auto;
     border:gray 1px solid;
     box-sizing: border-box;
-    height: 90%;
 }
 
 .canvas-container{
-    background-color: rgb(179, 205, 255);
+    background-color: rgb(239, 244, 255);
     margin: auto;
     margin-top: 20px;
     width: 80vw;

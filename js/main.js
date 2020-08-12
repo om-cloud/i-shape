@@ -318,23 +318,3 @@ function draw(ev) {
     }
 }
 
-function switchCurrShapes(offsetX, offsetY) {
-    switch (gCurrShape) {
-        case 'triangle':
-            drawTriangle(offsetX, offsetY);
-            break;
-        case 'rect':
-            drawRect(offsetX, offsetY);
-            break;
-        case 'text':
-            drawText(gCurrText, offsetX, offsetY);
-            break;
-        case 'line':
-            drawLine(offsetX, offsetY);
-            break;
-        case 'circle':
-            drawCircle(offsetX, offsetY);
-            break;
-
-    }
-}
